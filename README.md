@@ -21,4 +21,5 @@ This is not a full Site-to-Site VPN but rather having the ER-X as a gateway for 
 
 # Get the openvpn config file ready
 - Embed certificates and private key in the config file
-- set option `route-nopull` in the config file. (we'll do that manually or via dynamic routing)
+- Set option `route-nopull` in the config file. (we'll do that manually or via dynamic routing)
+- The openvpn client on the er-x being ... retentive: set the cipher explicitly in the config file to the one used by the server (e.g. `cipher AES-256-CBC`).
