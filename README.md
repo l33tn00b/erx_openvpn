@@ -23,3 +23,7 @@ This is not a full Site-to-Site VPN but rather having the ER-X as a gateway for 
 - Embed certificates and private key in the config file
 - Set option `route-nopull` in the config file. (we'll do that manually or via dynamic routing)
 - The openvpn client on the er-x being ... retentive: set the cipher explicitly in the config file to the one used by the server (e.g. `cipher AES-256-CBC`). Caveat: That cipher will not work with older versions of edgeOS (think 1.10 or so).
+
+# Activate it
+https://ryanscullen.wordpress.com/2017/07/24/openvpn-client-setup-on-edgeos/
+
